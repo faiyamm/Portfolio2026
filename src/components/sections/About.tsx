@@ -1,7 +1,7 @@
 
-export const WhatDrivesMe = () => {
+export const About = () => {
     return (
-        <section className="layout-container min-h-screen flex flex-col justify-center pt-20">
+        <section id="About" className="layout-container min-h-screen flex flex-col justify-center pt-20">
             <div className="flex flex-col gap-6">
                 <h2 className="text-5xl md:text-6xl font-bold text-white tracking-tighter">
                     What Drives Me?

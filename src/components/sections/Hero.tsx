@@ -1,7 +1,7 @@
 
 export const Hero = () => {
     return (
-        <section className="layout-container min-h-screen flex flex-col justify-center pt-20">
+        <section id="Hero" className="layout-container min-h-screen flex flex-col justify-center pt-20">
             <div className="flex flex-col gap-6">
                 <h1 className="text-8xl md:text-[10rem] font-bold text-white tracking-tighter">
                     Hi, I'm Sofia
