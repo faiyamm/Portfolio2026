@@ -22,7 +22,7 @@ function App() {
         <filter id="noiseFilter">
           <feTurbulence
             type="fractalNoise"
-            baseFrequency="0.6"
+            baseFrequency="0.5"
             stitchTiles="stitch"
           />
           <feColorMatrix type='saturate' values='0' />
