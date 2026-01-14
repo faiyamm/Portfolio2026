@@ -14,18 +14,16 @@ export const RevealText = ({
     delay = 0,
     ...props
 }: RevealTextProps) => {
-    // Split text into words, handling common whitespace
     const words = text.split(" ");
 
-    // Create the motion component for the specific tag
-    const Component = motion(tag);
+    const Component = motion.create(tag);
 
     const containerVariants: Variants = {
         hidden: {},
         visible: {
             transition: {
                 staggerChildren: 0.1,
-                delayChildren: delay // Wait for the delay before starting stagger
+                delayChildren: delay
             }
         }
     };
