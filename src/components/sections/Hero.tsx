@@ -6,7 +6,7 @@ export const Hero = () => {
             <div className="flex flex-col gap-6">
                 <RevealText
                     tag="h1"
-                    text="Hi, I'm Sofia"
+                    text="Hey, I'm Sofia"
                     className="text-8xl md:text-[10rem] font-bold text-white tracking-tighter"
                 />
 
@@ -23,8 +23,13 @@ export const Hero = () => {
                     />
                     <RevealText
                         tag="p"
-                        text="Making things work."
+                        text="Making things"
                         delay={0.9}
+                    />
+                    <RevealText
+                        tag="p"
+                        text="work."
+                        delay={1.1}
                     />
                 </div>
             </div>
