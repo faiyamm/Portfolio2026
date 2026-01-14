@@ -9,7 +9,7 @@ interface CardProps {
 export const Card = ({ cardInfo }: CardProps) => {
     return (
         <div className='group flex flex-col gap-6 w-full'>
-            <div className='relative w-full aspect-video rounded-[32px] overflow-hidden'>
+            <div className='relative w-full aspect-video rounded-2xl md:rounded-[32px] overflow-hidden'>
                 <img
                     src={cardInfo.imageUrl}
                     alt={cardInfo.title}

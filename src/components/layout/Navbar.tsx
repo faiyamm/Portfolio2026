@@ -1,16 +1,24 @@
 import { Link } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { HiDocumentDownload } from "react-icons/hi";
+// import { HiDocumentDownload } from "react-icons/hi";
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 import ResumePDF from "../../assets/SofiaPerez.CV.pdf";
 
 
+const menuLinks = [
+    { title: "home", path: "/#Hero" },
+    { title: "about", path: "/#About" },
+    { title: "work", path: "/#Work" },
+    { title: "projects", path: "/#Projects" }
+];
+
 export const Navbar = () => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [activeSection, setActiveSection] = useState("Hero");
     const location = useLocation();
 
     useEffect(() => {
@@ -32,13 +40,33 @@ export const Navbar = () => {
         }
     }, [location]);
 
-    const menuLinks = [
-        { title: "home", path: "/#Hero" },
-        { title: "about", path: "/#About" },
-        { title: "work", path: "/#Work" },
-        { title: "projects", path: "/#Projects" }
-    ];
+    useEffect(() => {
+        if (location.pathname === "/") {
+            const handleScroll = () => {
+                let current = "Hero";
 
+                for (const link of menuLinks) {
+                    const sectionId = link.path.replace("/#", "");
+                    const element = document.getElementById(sectionId);
+                    if (element) {
+                        const rect = element.getBoundingClientRect();
+                        // logic: if top is <= center of screen
+                        if (rect.top <= window.innerHeight / 2) {
+                            current = sectionId;
+                        }
+                    }
+                }
+                setActiveSection(current);
+            };
+
+            window.addEventListener("scroll", handleScroll);
+            handleScroll(); // initial check
+
+            return () => window.removeEventListener("scroll", handleScroll);
+        } else {
+            setActiveSection("Hero");
+        }
+    }, [location.pathname]);
 
     return (
         <>
@@ -131,7 +159,7 @@ export const Navbar = () => {
                                     className={`
                                         text-[17vw] md:text-[9rem] font-bold leading-[0.85] tracking-tighter lowercase
                                         transition-colors duration-300
-                                        ${(location.pathname + location.hash) === link.path
+                                        ${activeSection === link.path.replace("/#", "")
                                             ? "text-[var(--color-primary-400)]"
                                             : "text-white hover:text-[var(--color-primary-400)]"
                                         }

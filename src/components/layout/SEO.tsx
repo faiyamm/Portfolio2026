@@ -8,7 +8,7 @@ interface SEOProps {
 }
 
 export const SEO = ({
-    title = 'Sofia Perez - Developer',
+    title = 'Sofia Perez',
     description = 'Product Designer and Developer creating functional and beautiful digital experiences.',
     name = 'Sofia Perez',
     type = 'website'
