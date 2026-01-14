@@ -3,7 +3,7 @@ export const Projects = () => {
     return (
         <section className="layout-container min-h-screen flex flex-col justify-center pt-20">
             <div className="flex flex-col">
-                <h2 className="text-5xl md:text-6xl font-bold text-white tracking-tighter mb-8">
+                <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tighter mb-8">
                     Projects
                 </h2>
                 <p className="text-white/90 text-lg md:text-xl font-normal leading-relaxed max-w-6xl text-justify">
