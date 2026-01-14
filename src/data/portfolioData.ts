@@ -2,18 +2,18 @@
 import type { CardInfo } from '../types';
 
 // import card images
-import acmw from '../assets/card/acmw.png';
-import helen from '../assets/card/helen.png';
-import portfolio from '../assets/card/portfolio.png';
-import redmis from '../assets/card/redmis.png';
-import surveysdgku from '../assets/card/surveysdgku.png';
+import acmw from '../assets/card/acmw.webp';
+import helen from '../assets/card/helen.webp';
+import portfolio from '../assets/card/portfolio.webp';
+import redmis from '../assets/card/redmis.webp';
+import surveysdgku from '../assets/card/surveysdgku.webp';
 
 // import detail images
-import acmwDetail from '../assets/details/acmw_detail.png';
-import helenDetail from '../assets/details/helen_detail.png';
-import portfolioDetail from '../assets/details/portfolio_detail.png';
-import redmisDetail from '../assets/details/redmis_detail.png';
-import sdgkuDetail from '../assets/details/sdgku_detail.png';
+import acmwDetail from '../assets/details/acmw_detail.webp';
+import helenDetail from '../assets/details/helen_detail.webp';
+import portfolioDetail from '../assets/details/portfolio_detail.webp';
+import redmisDetail from '../assets/details/redmis_detail.webp';
+import sdgkuDetail from '../assets/details/sdgku_detail.webp';
 
 export const workExperience: CardInfo[] = [
     {
