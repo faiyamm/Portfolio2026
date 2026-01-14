@@ -20,16 +20,7 @@ function App() {
         <Footer />
       </div>
 
-      <svg className="hidden">
-        <filter id="noiseFilter">
-          <feTurbulence
-            type="fractalNoise"
-            baseFrequency="0.5"
-            stitchTiles="stitch"
-          />
-          <feColorMatrix type='saturate' values='0' />
-        </filter>
-      </svg>
+
     </Router>
   )
 }
