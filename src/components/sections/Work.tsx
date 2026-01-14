@@ -3,7 +3,7 @@ import { workExperience } from '../../data/portfolioData';
 
 export const Work = () => {
     return (
-        <section className="layout-container min-h-screen flex flex-col justify-center pt-20">
+        <section id="Work" className="layout-container min-h-screen flex flex-col justify-center pt-20">
             <div className="flex flex-col">
                 <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tighter mb-8">
                     Work Experience

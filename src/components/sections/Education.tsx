@@ -25,14 +25,14 @@ export const Education = () => {
                         className="p-8 rounded-3xl bg-white/5 hover:bg-white/10 transition-colors flex flex-col gap-4 border border-white/5"
                     >
                         <div className="flex flex-col lg:flex-row justify-between gap-2">
-                            <h3 className="text-xl font-bold text-white uppercase tracking-tight">
+                            <h3 className="text-xl md:text-2xl font-bold text-white uppercase tracking-tight">
                                 {education.school}
                             </h3>
-                            <span className="text-neutral-200 text-xs font-medium lg:text-right">
+                            <span className="text-white/90 text-sm md:text-base font-medium lg:text-right">
                                 {education.period}
                             </span>
                         </div>
-                        <p className="text-neutral-300 leading-relaxed font-normal text-sm">
+                        <p className="text-white/90 leading-relaxed font-normal text-base md:text-lg">
                             {education.description}
                         </p>
                     </div>

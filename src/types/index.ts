@@ -5,5 +5,10 @@ export interface CardInfo {
     fullDescription: string;
     date: string;
     imageUrl: string;
+    detailImageUrl: string;
     liveUrl?: string;
+    role?: string;
+    location?: string;
+    features?: { title: string; description: string }[];
+    techStack?: { name: string; description: string }[];
 }

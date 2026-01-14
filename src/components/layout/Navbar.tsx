@@ -21,8 +21,20 @@ export const Navbar = () => {
         }
     }, [isMenuOpen]);
 
+    useEffect(() => {
+        if (location.hash) {
+            setTimeout(() => {
+                const element = document.querySelector(location.hash);
+                if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                }
+            }, 100);
+        }
+    }, [location]);
+
     const menuLinks = [
-        { title: "home", path: "/" },
+        { title: "home", path: "/#Hero" },
+        { title: "about", path: "/#About" },
         { title: "work", path: "/#Work" },
         { title: "projects", path: "/#Projects" }
     ];
@@ -65,14 +77,14 @@ export const Navbar = () => {
                     </button>
 
                     <div className="flex gap-6 items-center relative z-[70]">
-                        <a
+                        {/* <a
                             href={ResumePDF}
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="View Resume"
                         >
                             <HiDocumentDownload className="text-white text-[2.2rem] cursor-pointer" />
-                        </a>
+                        </a> */}
 
                         <a
                             href={import.meta.env.VITE_LINKEDIN_URL}

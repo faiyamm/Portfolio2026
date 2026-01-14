@@ -18,19 +18,19 @@ export const Card = ({ cardInfo }: CardProps) => {
             </div>
 
             <div className='flex flex-col gap-3'>
-                <span className='text-neutral-200 font-medium tracking-wide text-xs'>
+                <span className='text-white/90 font-medium tracking-wide text-sm md:text-base'>
                     {cardInfo.date}
                 </span>
 
-                <h3 className='text-xl font-bold text-white'>
+                <h3 className='text-xl md:text-2xl font-bold text-white'>
                     {cardInfo.title}
                 </h3>
 
-                <p className='text-neutral-200 leading-relaxed text-sm line-clamp-3'>
+                <p className='text-white/90 leading-relaxed text-base md:text-lg line-clamp-3'>
                     {cardInfo.shortDescription}
                 </p>
 
-                <div className='pt-2 flex items-center justify-end gap-6 text-sm'>
+                <div className='pt-2 flex items-center justify-end gap-6 text-sm md:text-base'>
                     {cardInfo.liveUrl && (
                         <a
                             href={cardInfo.liveUrl}
