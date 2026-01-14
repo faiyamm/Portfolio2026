@@ -5,6 +5,7 @@ import { HiDocumentDownload } from "react-icons/hi";
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
+import ResumePDF from "../../assets/SofiaPerez.CV.pdf";
 
 
 export const Navbar = () => {
@@ -64,9 +65,14 @@ export const Navbar = () => {
                     </button>
 
                     <div className="flex gap-6 items-center relative z-[70]">
-                        <Link to="/" aria-label="Download CV">
+                        <a
+                            href={ResumePDF}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View Resume"
+                        >
                             <HiDocumentDownload className="text-white text-[2.2rem] cursor-pointer" />
-                        </Link>
+                        </a>
 
                         <a
                             href={import.meta.env.VITE_LINKEDIN_URL}
@@ -124,8 +130,9 @@ export const Navbar = () => {
                             ))}
 
                             <a
-                                href=""
-                                download=""
+                                href={ResumePDF}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 onClick={() => setIsMenuOpen(false)}
                                 className="text-[17vw] md:text-[9rem] font-bold leading-[0.85] tracking-tighter lowercase text-white hover:text-[#7575FF] transition-colors duration-300"
                             >
@@ -140,3 +147,4 @@ export const Navbar = () => {
         </>
     );
 };
+
