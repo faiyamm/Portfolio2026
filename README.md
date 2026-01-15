@@ -1,4 +1,4 @@
-![Portfolio Preview](src/assets/details/portfolio_detail.png)
+![Portfolio Preview](src/assets/details/portfolio_detail.webp)
 
 # Sofia Perez Portfolio
 

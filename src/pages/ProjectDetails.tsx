@@ -30,7 +30,7 @@ export const ProjectDetails = () => {
             className="pt-32 pb-20 px-4 md:px-0 max-w-4xl mx-auto"
         >
             {/* Header */}
-            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6 mb-12">
+            <div className="flex flex-col lg:flex-row lg:justify-between gap-6 mb-12">
                 <div>
                     <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight mb-2">
                         {item.title}
@@ -45,10 +45,10 @@ export const ProjectDetails = () => {
                         href={item.liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-white font-semibold border border-white/20 hover:bg-white/10 px-6 py-3 rounded-full transition-all shrink-0"
+                        className="inline-flex self-end items-center gap-2 text-white font-semibold border border-white/20 hover:bg-white/10 px-4 py-2 text-sm md:text-base md:px-6 md:py-3 rounded-full transition-all shrink-0"
                     >
                         Live Demo
-                        <FaExternalLinkAlt className="text-sm" />
+                        <FaExternalLinkAlt className="text-xs md:text-sm" />
                     </a>
                 )}
             </div>
