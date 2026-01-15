@@ -60,8 +60,6 @@
     margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem;
-    max-width: 360px;
-    /* Mobile */
 
     @media (min-width: 768px) {
       max-width: 680px;

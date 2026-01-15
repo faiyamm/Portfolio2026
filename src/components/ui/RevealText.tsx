@@ -5,6 +5,8 @@ interface RevealTextProps extends HTMLMotionProps<"div"> {
     tag?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span' | 'div';
     className?: string;
     delay?: number;
+    duration?: number;
+    stagger?: number;
 }
 
 export const RevealText = ({
@@ -12,6 +14,8 @@ export const RevealText = ({
     tag = 'div',
     className = '',
     delay = 0,
+    duration = 0.5,
+    stagger = 0.1,
     ...props
 }: RevealTextProps) => {
     const words = text.split(" ");
@@ -22,7 +26,7 @@ export const RevealText = ({
         hidden: {},
         visible: {
             transition: {
-                staggerChildren: 0.1,
+                staggerChildren: stagger,
                 delayChildren: delay
             }
         }
@@ -37,7 +41,7 @@ export const RevealText = ({
             opacity: 1,
             y: 0,
             transition: {
-                duration: 0.5,
+                duration: duration,
                 ease: "easeOut"
             }
         }
