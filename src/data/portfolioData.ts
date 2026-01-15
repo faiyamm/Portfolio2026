@@ -21,37 +21,37 @@ export const workExperience: CardInfo[] = [
         title: "SDGKU Survey Platform",
         role: "Full Stack Developer",
         location: "Tijuana, Mexico (Remote)",
-        shortDescription: `Collaborated in a Scrum environment to build an administrative survey platform, designing a custom authentication system and RBAC for granular faculty access using PHP and MySQL.`,
-        fullDescription: `Collaborated within a cross-functional team using Scrum methodology to architect a custom administrative survey platform from the ground up. Led the design phase in Figma to create an intuitive administrative dashboard and a streamlined student survey interface. Engineered the core infrastructure, including a custom authentication system, role-based access control (RBAC), and secure invitation workflows using JavaScript, PHP, and MySQL.`,
+        shortDescription: `Built a secure, full-stack administrative ecosystem for university assessments, featuring a custom-engineered RBAC system and a private, anti-spam authentication workflow.`,
+        fullDescription: `Collaborated within a cross-functional development team using Scrum methodology to architect and build a custom administrative survey platform from the ground up. Led the end-to-end design phase in Figma, focusing on creating an intuitive administrative dashboard for faculty and a streamlined, responsive survey interface for students. Engineered the core system infrastructure, including a custom authentication module, role-based access control (RBAC), and secure invitation-only registration workflows to ensure data integrity and platform security.`,
         date: "Feb 2025 - Jun 2025",
         imageUrl: surveysdgku,
         detailImageUrl: sdgkuDetail,
         features: [
-            { title: "Role-Based Access Control (RBAC)", description: "Developed a granular permission system for faculty and staff access." },
-            { title: "Custom Authentication", description: "Built a secure, from-scratch login module with session validation and input sanitization." },
-            { title: "Anti-Spam Workflow", description: "Implemented a unique email invitation process to secure authorized registrations." },
-            { title: "Admin Dashboard", description: "Designed and implemented a central UI for managing complex survey data." }
+            { title: "Role-Based Access Control (RBAC)", description: "Developed a granular permission system to manage diverse access levels for faculty and administrative staff." },
+            { title: "Custom Authentication", description: "Built a secure login module from scratch, incorporating session validation and rigorous input sanitization to prevent unauthorized access." },
+            { title: "Anti-Spam Workflow", description: "Implemented a unique email invitation process that eliminated spam registrations and restricted platform entry to authorized personnel." },
+            { title: "Admin Dashboard", description: "Designed and implemented a centralized user interface focused on managing complex survey data and student participation metrics." }
         ],
         techStack: [
-            { name: "PHP & MySQL", description: "Server-side logic and relational database management." },
-            { name: "JavaScript", description: "Logic for frontend interactivity and form validation." },
-            { name: "HTML/CSS", description: "Foundation for the platform’s responsive layout." },
-            { name: "Figma", description: "Tool for UI/UX prototyping and administrative flow design." }
+            { name: "PHP & MySQL", description: "Utilized for robust server-side logic and relational database management." },
+            { name: "JavaScript", description: "Applied for core frontend interactivity, dynamic form validation, and session handling." },
+            { name: "HTML/CSS", description: "Established the foundation for the platform's responsive layout and visual presentation." },
+            { name: "Figma", description: "Primary tool for UI/UX prototyping and mapping out complex administrative user flows." }
         ]
     },
     {
         id: "acmw",
-        title: "ACM-Women: México",
+        title: "ACM-Women: México Community Website",
         role: "Frontend Developer & Lead Designer",
-        shortDescription: `Engineered the community website from the ground up, conducting competitive research on organizational content structures and translating high-fidelity Figma designs into an interactive React implementation using custom CSS.`,
-        fullDescription: `Delivered a modern digital home for the ACM-Women Mexico community. Conducted extensive research on organizational content structures to architect the site's hierarchy from scratch. Translated high-fidelity Figma designs into a functional, interactive implementation using React and custom CSS, focusing on a polished user experience and mobile-first responsiveness.`,
+        shortDescription: `Architected a high-performance community hub from scratch, transforming organizational research into a polished React application with dynamic media handling.`,
+        fullDescription: `Engineered the official community website from the ground up, conducting extensive competitive research on organizational content structures to architect a scalable information hierarchy. Translated high-fidelity Figma designs into a functional, interactive implementation using React and custom CSS, ensuring a polished user experience. Managed the entire development lifecycle, from initial conceptualization and content planning to final performance optimization and deployment on Vercel.`,
         date: "Dec 2025 - Jan 2026",
         imageUrl: acmw,
         detailImageUrl: acmwDetail,
         liveUrl: "https://acm-women.vercel.app/",
         features: [
-            { title: "Architecture Research", description: "Built the site hierarchy from scratch based on organizational content research." },
-            { title: "Custom Implementation", description: "Translated complex Figma designs into a functional React application." },
+            { title: "Architecture Research", description: "Conducted organizational research to structure community resources and content into a clear, navigable hierarchy." },
+            { title: "High-Fidelity Implementation", description: "Translated complex Figma designs into a functional React application." },
             { title: "Advanced Interactivity", description: "Integrated Aceternity UI and theme toggles for a premium interactive experience." },
             { title: "SEO Optimized", description: "Implemented metadata and semantic HTML to improve search visibility." }
         ],
@@ -64,24 +64,23 @@ export const workExperience: CardInfo[] = [
     },
     {
         id: "redmis",
-        title: "Redmis.org",
+        title: "Red Temática Mexicana de Ingeniería de Software (RedMIS)",
         role: "Frontend Developer",
         location: "Tijuana, Mexico (Remote)",
-        shortDescription: `Executed a comprehensive UI redesign to modernize legacy layouts, successfully enhancing website usability and information architecture through the full development lifecycle.`,
-        fullDescription: `Executed a comprehensive UI/UX redesign of the official Redmis.org website, replacing legacy layouts with a modern, high-engagement interface. Focused on enhancing the information architecture to improve site navigation and usability. Managed the full development lifecycle, translating visual prototypes into a technical frontend implementation to ensure a seamless transition for the organization’s digital presence.`,
+        shortDescription: `Modernized a national engineering network's platform through a comprehensive UI overhaul, replacing legacy systems with an intuitive layout that boosted user engagement.`,
+        fullDescription: `Executed a comprehensive UI/UX redesign for the official Redmis.org website, focusing on modernizing the interface and enhancing overall usability. Successfully replaced a legacy design with a clear, intuitive layout that prioritized information architecture and significantly increased user engagement. Collaborated across the full development lifecycle, transitioning from visual prototyping in Figma to technical frontend implementation while ensuring a seamless migration to the new system.`,
         date: "Mar 2025 - Apr 2025",
         imageUrl: redmis,
         detailImageUrl: redmisDetail,
         liveUrl: "https://redmis.org/",
         features: [
-            { title: "Modernization", description: "Replaced legacy system design with a high-engagement, modern interface." },
+            { title: "Modernization", description: "Completely overhauled the legacy UI to align with modern web standards and improve visual clarity." },
             { title: "Information Architecture", description: "Restructured navigation based on usability research to improve user flow." },
-            { title: "Full Lifecycle Management", description: "Led the project from initial visual concepts to final technical deployment." }
+            { title: "Collaborative Implementation", description: "Worked closely through every stage of development, from initial visual design concepts to final technical execution." }
         ],
         techStack: [
-            { name: "Figma", description: "High-fidelity visual identity design and interactive prototyping." },
-            { name: "React", description: "Core framework for building a performant and maintainable frontend." },
-            { name: "Tailwind CSS", description: "Leveraged for rapid, consistent styling across the platform." }
+            { name: "Vanilla JS, HTML, CSS", description: "Used standard web technologies to ensure a lightweight and performant frontend implementation." },
+            { name: "Figma", description: "Utilized for creating high-fidelity prototypes and defining the new visual identity of the platform." }
         ]
     }
 ];
@@ -89,10 +88,10 @@ export const workExperience: CardInfo[] = [
 export const projects: CardInfo[] = [
     {
         id: "helen",
-        title: "HELEN: SMART HOME ASSISTANT",
+        title: "HELEN - Smart Home Assistant For The Deaf",
         role: "Lead Frontend Developer & UI Designer",
-        shortDescription: `Developed a React application integrating MediaPipe. js for real-time sign language recognition, addressing digital exclusion for the deaf community through a textless, gesture-based interface.`,
-        fullDescription: `Created an inclusive assistive technology ecosystem for the deaf community. Developed a React-based web application that integrates MediaPipe.js for real-time Mexican Sign Language (LSM) recognition. Designed a textless "Bento Box" UI in Figma centered on universal iconography, achieving a 67% unassisted task completion rate during usability testing. Integrated Socket.IO for low-latency, bi-directional communication with smart devices.`,
+        shortDescription: `Developed a real-time Mexican Sign Language (LSM) recognition assistant featuring a unique, textless "Bento Box" UI designed for universal accessibility.`,
+        fullDescription: `Developed a React-based smart home assistant that empowers deaf users to control household devices via real-time Mexican Sign Language (LSM) recognition. Designed a textless "Bento Box" UI in Figma, utilizing universal iconography to bridge the digital gap for users with varying literacy levels, achieving a 67% unassisted task completion rate. Engineered a high-performance web architecture that reduced RAM consumption by 90% and CPU usage by 50% compared to previous legacy versions.`,
         date: "Sep 2025 - Nov 2025",
         imageUrl: helen,
         detailImageUrl: helenDetail,
@@ -103,10 +102,10 @@ export const projects: CardInfo[] = [
             { title: "User Validation", description: "Achieved a 67% unassisted task completion rate with 15 deaf community members." }
         ],
         techStack: [
-            { name: "React", description: "Managed complex application state across 5 core smart home modules." },
+            { name: "React & Custom CSS", description: "Core framework and styling for a responsive, 5-screen dashboard (Home, Alarms, Weather, Devices, Settings)." },
             { name: "MediaPipe.js", description: "Computer vision library for real-time hand landmark extraction." },
             { name: "Socket.IO", description: "WebSocket protocol for continuous, low-latency communication." },
-            { name: "Figma", description: "Designed the universal iconography system and UI layout." }
+            { name: "Figma", description: "Used for iterative UI design and the creation of a specialized universal iconography system." }
         ]
     },
     {
@@ -124,10 +123,10 @@ export const projects: CardInfo[] = [
             { title: "Modern Tech Stack", description: "Utilized the latest React features and Tailwind CSS for efficient development." }
         ],
         techStack: [
-            { name: "React", description: "Core library for building the user interface." },
+            { name: "React & Vite", description: "Core framework and build tool for efficient development." },
             { name: "TypeScript", description: "Used for type safety and better developer experience." },
             { name: "Tailwind CSS", description: "Utility-first CSS framework for styling." },
-            { name: "Vite", description: "Fast build tool and development server." }
+            { name: "Framer Motion", description: "Used for smooth animations and transitions." }
         ]
     }
 ];

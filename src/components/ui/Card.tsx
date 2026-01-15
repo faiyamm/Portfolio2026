@@ -4,9 +4,10 @@ import type { CardInfo } from '../../types';
 
 interface CardProps {
     cardInfo: CardInfo;
+    section?: string;
 }
 
-export const Card = ({ cardInfo }: CardProps) => {
+export const Card = ({ cardInfo, section }: CardProps) => {
     return (
         <div className='group flex flex-col gap-6 w-full'>
             <div className='relative w-full aspect-video rounded-2xl md:rounded-[32px] overflow-hidden'>
@@ -38,12 +39,13 @@ export const Card = ({ cardInfo }: CardProps) => {
                             rel="noopener noreferrer"
                             className='relative text-white font-semibold after:absolute after:-bottom-1 after:left-0 after:h-[1px] after:w-full after:origin-left after:scale-x-0 after:bg-white after:transition-transform after:duration-300 hover:after:scale-x-100'
                         >
-                            Live Preview
+                            Live Demo
                         </a>
                     )}
 
                     <Link
                         to={`/project/${cardInfo.id}`}
+                        state={{ fromSection: section }}
                         className='group/link inline-flex items-center gap-2 text-white font-semibold relative after:absolute after:-bottom-1 after:left-0 after:h-[1px] after:w-full after:origin-left after:scale-x-0 after:bg-white after:transition-transform after:duration-300 hover:after:scale-x-100'
                     >
                         More Details

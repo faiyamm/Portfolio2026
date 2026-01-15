@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 // import { HiDocumentDownload } from "react-icons/hi";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 import ResumePDF from "../../assets/SofiaPerez.CV.pdf";
@@ -20,6 +20,7 @@ export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [activeSection, setActiveSection] = useState("Hero");
     const location = useLocation();
+    const prevPathRef = useRef<string | null>(null);
 
     useEffect(() => {
         if (isMenuOpen) {
@@ -31,13 +32,17 @@ export const Navbar = () => {
 
     useEffect(() => {
         if (location.hash) {
-            setTimeout(() => {
-                const element = document.querySelector(location.hash);
-                if (element) {
-                    element.scrollIntoView({ behavior: "smooth" });
-                }
-            }, 100);
+            const element = document.querySelector(location.hash);
+            if (element) {
+                const isSamePath = prevPathRef.current === location.pathname;
+                const behavior = isSamePath ? "smooth" : "auto";
+
+                setTimeout(() => {
+                    element.scrollIntoView({ behavior });
+                }, 0);
+            }
         }
+        prevPathRef.current = location.pathname;
     }, [location]);
 
     useEffect(() => {
@@ -64,7 +69,11 @@ export const Navbar = () => {
 
             return () => window.removeEventListener("scroll", handleScroll);
         } else {
-            setActiveSection("Hero");
+            if (location.state && (location.state as any).fromSection) {
+                setActiveSection((location.state as any).fromSection);
+            } else {
+                setActiveSection("Hero");
+            }
         }
     }, [location.pathname]);
 
