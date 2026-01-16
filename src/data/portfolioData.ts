@@ -43,7 +43,7 @@ export const workExperience: CardInfo[] = [
         id: "acmw",
         title: "ACM-Women: México Community Website",
         role: "Frontend Developer & Lead Designer",
-        shortDescription: `Architected a high-performance community hub from scratch, transforming organizational research into a polished React application with dynamic media handling.`,
+        shortDescription: `Architected a high-performance community hub from scratch, transforming organizational research into a polished React application with dynamic data handling.`,
         fullDescription: `Engineered the official community website from the ground up, conducting extensive competitive research on organizational content structures to architect a scalable information hierarchy. Translated high-fidelity Figma designs into a functional, interactive implementation using React and custom CSS, ensuring a polished user experience. Managed the entire development lifecycle, from initial conceptualization and content planning to final performance optimization and deployment on Vercel.`,
         date: "Dec 2025 - Jan 2026",
         imageUrl: acmw,
